@@ -1,15 +1,19 @@
 package java_tutorials;
 
 public class Scope {
+	static int i = 5;
+
 	static void a() {
-		int i = 0;
+		int i = 10;
+		b();
+	}
+
+	static void b() {
+		System.out.println(i);
 	}
 
 	public static void main(String[] args) {
-		for(int i = 0; i < 5; i++) {
-			a();
-			System.out.println(i);
-		}
+		a();
 
 	}
 

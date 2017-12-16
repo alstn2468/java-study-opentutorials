@@ -2,14 +2,12 @@ package java_tutorials;
 
 public class Scope {
 	static void a() {
-		int i = 0;
+		String title = "Coding Everybody";
 	}
 
 	public static void main(String[] args) {
-		for(int i = 0; i < 5; i++) {
-			a();
-			System.out.println(i);
-		}
+		a();
+		// System.out.println(title);
 
 	}
 

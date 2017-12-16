@@ -1,12 +1,14 @@
 package java_tutorials;
 
 public class Scope {
+	static int i;		// 전역변수
+
 	static void a() {
-		int i = 0;
+		i = 0;
 	}
 
 	public static void main(String[] args) {
-		for(int i = 0; i < 5; i++) {
+		for(i = 0; i < 5; i++) {
 			a();
 			System.out.println(i);
 		}
