@@ -12,14 +12,18 @@ class Calculator {
 		System.out.println(this.left + this.right);
 	}
 
-	public void avg() {
-		System.out.println((this.left + this.right) / 2);
+	public int avg() {
+		return ((this.left + this.right) / 2);
 	}
 }
 
 class SubtractionableCalculator extends Calculator {
 	 public void sum() {
 		 System.out.println("실행 결과는 " + (this.left + this.right) + "입니다.");
+	 }
+
+	 public int avg() {
+		 return ((this.left + this.right) / 2);
 	 }
 
 	 public void subtract() {
