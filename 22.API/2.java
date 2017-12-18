@@ -1,13 +1,11 @@
 package java_tutorials;
 
-class Item {
+import java.lang.*;
 
-}
-
-public class Classpath {
+public class API {
 
 	public static void main(String[] args) {
-
+		System.out.println(1);
 
 	}
 

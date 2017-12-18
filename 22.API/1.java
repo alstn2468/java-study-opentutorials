@@ -1,13 +1,9 @@
 package java_tutorials;
 
-class Item {
-
-}
-
-public class Classpath {
+public class API {
 
 	public static void main(String[] args) {
-
+		System.out.println(1);
 
 	}
 

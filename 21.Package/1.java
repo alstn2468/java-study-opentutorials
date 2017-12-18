@@ -1,10 +1,6 @@
 package java_tutorials;
 
-class Item {
-
-}
-
-public class Classpath {
+public class Package_A {
 
 	public static void main(String[] args) {
 
