@@ -1,19 +1,29 @@
 package java_tutorials;
 
+class DivideException extends RuntimeException {
+    DivideException() {
+        super();
+    }
+
+    DivideException(String message) {
+        super(message);
+    }
+}
+
 class Calculator {
     int left, right;
-    
+
     public void setOprands(int left, int right) {
         this.left = left;
         this.right = right;
     }
 
     public void divide() {
-        System.out.print("계산결과는 ");
-        System.out.print(this.left / this.right);
-        System.out.print(" 입니다.");
+        if(this.right == 0) {
+            throw new DivideException("0으로 나누는 것은 허용되지 않습니다.");
+        }
+        System.out.print(this.left/this.right);
     }
-
 }
 
 public class ExceptionDemo {
