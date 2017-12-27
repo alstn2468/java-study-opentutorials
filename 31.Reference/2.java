@@ -1,5 +1,12 @@
 package java_tutorials;
 
+class A {
+	public int id;
+	A(int id) {
+		this.id = id;
+	}
+}
+
 public class Reference {
 
 	public static void runValue() {
@@ -9,8 +16,16 @@ public class Reference {
 		System.out.println("runValue, " + a);
 	}
 
+	public static void runReference() {
+		A a = new A(1);
+		A b = a;
+		b.id = 2;
+		System.out.println("runReference, " + a.id);
+	}
+
 	public static void main(String[] args) {
 		runValue();
+		runReference();
 
 	}
 
